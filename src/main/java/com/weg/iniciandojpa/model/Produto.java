@@ -25,7 +25,7 @@ public class Produto {
     @Column(nullable = false)
     private String nome;
 
-    @Column(precision = 10, scale = 2, nullable = false)
+    @Column( scale = 2, nullable = false)
     private Double preco;
 
 

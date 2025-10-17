@@ -14,8 +14,8 @@ import lombok.*;
 public class Usuario {
 
     @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        private Long id;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
 
     @Column( nullable = false)
@@ -27,6 +27,15 @@ public class Usuario {
 
     @Column(nullable = false)
     private String senha;
+
+
+
+    public Usuario(String nome, String email, String senha){
+        this.nome = nome;
+        this.email = email;
+        this.senha = senha;
+
+    }
 
 
 

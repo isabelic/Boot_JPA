@@ -19,7 +19,7 @@ public class Funcionario {
     private String nome;
 
 
-    @Column(name = "FolhaPagamento",nullable = false, precision = 10, scale = 2)
+    @Column(name = "folha_pagamento",nullable = false,  scale = 2)
     private double salario;
 
 

@@ -1,6 +1,7 @@
 package com.weg.iniciandojpa.model;
 
 
+import com.weg.iniciandojpa.model.Enum.FormaPagamento;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -27,11 +28,11 @@ public class Pagamento {
     private LocalDateTime dataPagamento;
 
 
-    @Column(name = "ValorPagamento",nullable = false, precision = 10, scale = 2)
+    @Column(name = "valor_pagamento",nullable = false,  scale = 2)
     private double valor;
 
 
-    @Enumerated(EnumType.ORDINAL)
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private String formaPagamento;
+    private FormaPagamento formaPagamento;
 }

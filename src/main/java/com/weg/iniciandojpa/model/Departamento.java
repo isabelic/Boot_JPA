@@ -19,8 +19,12 @@ public class Departamento {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "Nome_Departamento", nullable = false)
+    @Column(name = "nome_departamento", nullable = false)
     private String nome;
 
+
+
+    @Column(nullable = false, name = "abreviacao_nome_departamento")
+    private String sigla;
 
 }

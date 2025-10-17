@@ -16,10 +16,10 @@ public class Categoria {
     @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nomeCategoria", nullable = false,length = 50)
+    @Column(name = "nome_categoria", nullable = false,length = 50)
     private String nome;
 
-    @Column(name = "descricaoCategoria", nullable = false, length = 100)
+    @Column(name = "descricao_categoria", nullable = false, length = 100)
     private String descricao;
 
 }

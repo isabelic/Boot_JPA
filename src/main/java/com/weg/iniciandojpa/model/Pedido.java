@@ -1,11 +1,14 @@
 package com.weg.iniciandojpa.model;
 
 
+import ch.qos.logback.core.status.Status;
 import jakarta.persistence.*;
+import jdk.jshell.Snippet;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import com.weg.iniciandojpa.model.Enum.StatusPedido;
 
 import java.time.LocalDate;
 
@@ -33,5 +36,5 @@ public class Pedido {
 
 
     @Enumerated(EnumType.STRING)
-    private String status;
+    private StatusPedido status;
 }
